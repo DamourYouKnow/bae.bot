@@ -29,7 +29,7 @@ async def on_ready():
 	print(client.user.id)
 	print("----------------")
 
-	await client.change_presence(game=discord.Game(name='bae.help for cmds'))
+	#await client.change_presence(game=discord.Game(name='bae.help for cmds'))
 '''
 Event handler for message event
 

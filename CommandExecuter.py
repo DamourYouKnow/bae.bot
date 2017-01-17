@@ -123,6 +123,15 @@ class CommandExecuter(BotModule):
 		elif command.startswith("idlecah"):
 			await modules.cahGame.kickIdle(message)
 
+		#quote commands
+		elif command.startswith("quote"):
+			await modules.quoteModule.postQuote(message)
+		elif command.startswith("addquote"):
+			await modules.quoteModule.addQuote(
+				message,
+				message.content[len(CommandExecuter.COMMAND_TRIGGER)+9:]
+			)
+
 		#other commands
 		elif command.startswith("help"):
 			await self.commandList(message)

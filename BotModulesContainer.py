@@ -8,6 +8,7 @@ from CustomCommandManager import CustomCommandManager
 from AudioPlayer import AudioPlayer
 from CardsAgainstHumanity import CardsAgainstHumanity
 from CleverbotModule import CleverbotModule
+from QuoteModule import QuoteModule
 
 '''
 Container class for all bot modules
@@ -31,3 +32,4 @@ class BotModulesContainer:
 		self.audioPlayer = AudioPlayer(client)
 		self.cahGame = CardsAgainstHumanity(client)
 		self.cleverbot = CleverbotModule(client)
+		self.quoteModule = QuoteModule(client)
